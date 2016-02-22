@@ -25,4 +25,10 @@
 #define MAX_LINE 128
 #define SERV_PORT 8000
 
+void err_exit(const char* msg) 
+{
+    perror(msg);
+    exit(EXIT_FAILURE);
+}
+
 #endif
